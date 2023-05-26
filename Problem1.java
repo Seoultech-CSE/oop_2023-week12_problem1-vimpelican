@@ -40,12 +40,11 @@ public class Problem1 {
                 // double 형으로 변환하여 비교
                 if(input.get(j).doubleValue() < input.get(minIndex).doubleValue())
                     minIndex = j;
-            
-                // 값 정렬
-                Number temp = input.get(i);
-                input.set(i, input.get(minIndex));
-                input.set(minIndex, temp);
             }
+            // 값 정렬
+            Number temp = input.get(i);
+            input.set(i, input.get(minIndex));
+            input.set(minIndex, temp);
         }
     }
 }
